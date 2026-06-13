@@ -1,5 +1,5 @@
 /**
- * @name no-aram-delay-plugin
+ * @name NoAramDelay
  * @description Removes the delay between swapping to champions in ARAM
  * @author menal
  * @link https://github.com/Menal226/Menals-League-Plugins/blob/main/src/NoAramDelay.js
