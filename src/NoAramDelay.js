@@ -1,3 +1,10 @@
+/**
+ * @name no-aram-delay-plugin
+ * @description Removes the delay between swapping to champions in ARAM
+ * @author menal
+ * @link https://github.com/Menal226/Menals-League-Plugins
+ */
+
 export function load() {
   const controllers = new Map()
 
