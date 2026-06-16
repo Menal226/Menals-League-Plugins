@@ -23,7 +23,7 @@ function updateFavoriteMenu() {
     queueElem.addEventListener("click", async (event) => {
       event.stopPropagation();
       const lobbyInfo = await fetch("/lol-lobby/v2/lobby", {method: "GET"}).then(async r => await r.json())
-      if (lobbyInfo["gameConfig"]["queueId"] == queueId) return
+      if ("gameConfig" in lobbyInfo && lobbyInfo["gameConfig"]["queueId"] == queueId) return
       await fetch("/lol-lobby/v2/lobby", {method: "DELETE"})
       await fetch("/lol-lobby/v2/lobby", {
         method: "POST",
